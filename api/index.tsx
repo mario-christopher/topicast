@@ -54,12 +54,14 @@ app.frame("/:topicName", async (c) => {
     }
   });
 
+  console.log("C", c.var);
   const updatedState: TopicState = {
     fid: c.frameData?.fid as number,
     castId: c.frameData?.castId.fid as number,
     topicName,
     requesterCustodyAddress: (c.var as any)?.interactor?.custodyAddress,
     userName: (c.var as any)?.interactor?.username,
+    displayName: (c.var as any)?.interactor?.displayName,
     startDateTime: new Date(),
     status: 'Started',
   }

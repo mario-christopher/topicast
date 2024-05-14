@@ -42,6 +42,7 @@ export interface TopicState {
   castId: number;
   requesterCustodyAddress: EthAddress;
   userName: string;
+  displayName: string;
   topicName: string;
   startDateTime: Date;
   status: UserResponseStatus;

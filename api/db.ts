@@ -26,9 +26,16 @@ export class User {
   requesterCustodyAddress: string
 
   @Column({
-    type: 'varchar'
+    type: 'varchar',
+    nullable: true,
   })
   userName: string
+
+  @Column({
+    type: 'varchar',
+    nullable: true,
+  })
+  displayName: string
 
   @Column({
     type: 'varchar'
@@ -110,6 +117,7 @@ export async function saveTopiCast(topic: Topic, state: TopicState) {
     userCast.castId = state.castId;
     userCast.requesterCustodyAddress = state.requesterCustodyAddress;
     userCast.userName = state.userName;
+    userCast.displayName = state.displayName;
     userCast.topicName = topic.name;
     userCast.startDateTime = state.startDateTime;
   }
