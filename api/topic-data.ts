@@ -14,34 +14,62 @@ export const topics: Topics = {
       },
       {
         id: 2,
-        itemNote: "Overview",
+        itemNote: "Overview on Snaps",
         imageUrl: "2.png",
         prompt: {},
+        moreInfo: "https://docs.metamask.io/snaps/"
       },
       {
         id: 3,
-        itemNote: "UI Components",
+        itemNote: "Overview on Custom UI",
         imageUrl: "3.png",
+        prompt: {},
+        moreInfo: "https://docs.metamask.io/snaps/features/custom-ui/interactive-ui/"
+      },
+      {
+        id: 4,
+        itemNote: "UI Components",
+        imageUrl: "4.png",
         prompt: {},
       }
       ,
       {
-        id: 4,
+        id: 5,
         itemNote: "Address Component",
-        imageUrl: "4.png",
+        imageUrl: "5.png",
         prompt: {},
         moreInfo: "https://docs.metamask.io/snaps/features/custom-ui/#address"
       },
       {
-        id: 5,
+        id: 6,
         itemNote: "Address Code view",
-        imageUrl: "5.png",
+        imageUrl: "6.png",
         prompt: {},
       },
       {
-        id: 6,
-        itemNote: "Yes/No Quiz",
-        imageUrl: "6.png",
+        id: 7,
+        itemNote: "Button Component",
+        imageUrl: "7.png",
+        prompt: {},
+        moreInfo: "https://docs.metamask.io/snaps/features/custom-ui/#button"
+      },
+      {
+        id: 8,
+        itemNote: "Button Code view",
+        imageUrl: "8.png",
+        prompt: {},
+      },
+      {
+        id: 9,
+        itemNote: "Other UI Components",
+        imageUrl: "9.png",
+        prompt: {},
+        moreInfo: "https://docs.metamask.io/snaps/features/custom-ui/"
+      },
+      {
+        id: 10,
+        itemNote: "Quick Quiz: Yes/No",
+        imageUrl: "10.png",
         prompt: {
           prompt: "A or B",
           correctAnswers: ["A"],
@@ -49,9 +77,9 @@ export const topics: Topics = {
         }
       },
       {
-        id: 7,
+        id: 11,
         itemNote: "MultiChoice Q",
-        imageUrl: "7.png",
+        imageUrl: "11.png",
         prompt: {
           prompt: "A, B, C or D",
           correctAnswers: ["A", "B", "D"],
@@ -59,22 +87,30 @@ export const topics: Topics = {
         }
       },
       {
-        id: 8,
-        itemNote: "References",
-        imageUrl: "8.png"
+        id: 12,
+        itemNote: "Resources",
+        imageUrl: "12.png"
       },
       {
-        id: 9,
-        itemNote: "Wallet Address",
-        imageUrl: "9.png",
+        id: 13,
+        itemNote: "Email Address",
+        imageUrl: "13.png",
+        prompt: {
+          prompt: "Email Id",
+        }
+      },
+      {
+        id: 14,
+        itemNote: "Mint POAP",
+        imageUrl: "14.png",
         prompt: {
           prompt: "Wallet Address",
         }
       },
       {
-        id: 10,
+        id: 15,
         itemNote: "Thank You",
-        imageUrl: "10.png"
+        imageUrl: "15.png"
       }
     ]
   }
