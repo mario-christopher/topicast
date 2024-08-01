@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import "dotenv/config";
-import { DataSource, Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToOne, JoinColumn } from "typeorm"
+import { DataSource, Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToOne, JoinColumn, Repository } from "typeorm"
 import { Topic, TopicState } from "./types.js";
 
 let initializing = 0;
@@ -108,7 +108,7 @@ export async function saveTopiCast(topic: Topic, state: TopicState) {
 
   await initializeDB();
   const userRepo = AppDataSource.getRepository(User);
-  let userCast = await getUserCast(state.fid, state.castId, topic.name);
+  let userCast = await getUserCast(userRepo, state.fid, state.castId, topic.name);
 
   if (!userCast) {
     userCast = new User();
@@ -126,7 +126,7 @@ export async function saveTopiCast(topic: Topic, state: TopicState) {
 
   if (state.itemResponse) {
     Object.keys(state.itemResponse).forEach(i => {
-      const item = userCast.itemResponses.find(uc => uc.frameId == +i)
+      const item = userCast.itemResponses.find(uc => uc.frameId == +i);
       if (!item) {
         //  New Item, so add
         const itemResponse = new ItemResponse();
@@ -141,8 +141,7 @@ export async function saveTopiCast(topic: Topic, state: TopicState) {
   await userRepo.save(userCast);
 }
 
-export async function getUserCast(fid: number, castId: number, topicName: string) {
-  const userRepo = AppDataSource.getRepository(User);
+export async function getUserCast(userRepo: Repository<User>, fid: number, castId: number, topicName: string) {
   const savedData = await userRepo.findOne({
     where: {
       fid, castId, topicName

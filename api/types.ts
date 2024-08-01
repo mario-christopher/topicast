@@ -17,20 +17,19 @@ export interface UserPrompt {
   allowCheckAnswer?: true;
 }
 
-export interface TopicItem {
+export interface Frame {
   id: number;
-  itemNote?: string;
-  imageUrl: string;
+  title: string;
+  imageFileName: string;
   prompt?: UserPrompt;
-  moreInfo?: string;
+  externalUrl?: string;
 }
 
 export interface Topic {
   name: string;
-  releaseDate: Date;
-  lastUpdated?: Date;
+  createdDate: Date;
   imageAspectRatio: AspectRatio;
-  items: TopicItem[];
+  frames: Frame[];
 }
 
 export interface Topics {
@@ -52,6 +51,6 @@ export interface TopicState {
   }
 }
 
-export interface TState {
+export interface AppState {
   frame: number;
 }

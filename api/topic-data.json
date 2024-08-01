@@ -1,0 +1,119 @@
+  {
+    "snapCustomUI": {
+      "name": "snapCustomUI",
+      "createdDate": "06/06/2024",
+      "imageAspectRatio": "1.91:1",
+      "frames": [
+        {
+          "id": 1,
+          "title": "Intro Info",
+          "imageFileName": "1.png"
+        },
+        {
+          "id": 2,
+          "title": "Overview on Snaps",
+          "imageFileName": "2.png",
+          "prompt": {},
+          "externalUrl": "https://docs.metamask.io/snaps/"
+        },
+        {
+          "id": 3,
+          "title": "Overview on Custom UI",
+          "imageFileName": "3.png",
+          "prompt": {},
+          "externalUrl": "https://docs.metamask.io/snaps/features/custom-ui/interactive-ui/"
+        },
+        {
+          "id": 4,
+          "title": "UI Components",
+          "imageFileName": "4.png",
+          "prompt": {}
+        },
+        {
+          "id": 5,
+          "title": "Address Component",
+          "imageFileName": "5.png",
+          "prompt": {},
+          "externalUrl": "https://docs.metamask.io/snaps/features/custom-ui/#address"
+        },
+        {
+          "id": 6,
+          "title": "Address Code view",
+          "imageFileName": "6.png",
+          "prompt": {}
+        },
+        {
+          "id": 7,
+          "title": "Button Component",
+          "imageFileName": "7.png",
+          "prompt": {},
+          "externalUrl": "https://docs.metamask.io/snaps/features/custom-ui/#button"
+        },
+        {
+          "id": 8,
+          "title": "Button Code view",
+          "imageFileName": "8.png",
+          "prompt": {}
+        },
+        {
+          "id": 9,
+          "title": "Other UI Components",
+          "imageFileName": "9.png",
+          "prompt": {},
+          "externalUrl": "https://docs.metamask.io/snaps/features/custom-ui/"
+        },
+        {
+          "id": 10,
+          "title": "Quick Quiz: Yes/No",
+          "imageFileName": "10.png",
+          "prompt": {
+            "prompt": "A or B",
+            "correctAnswers": [
+              "A"
+            ],
+            "allowCheckAnswer": true
+          }
+        },
+        {
+          "id": 11,
+          "title": "MultiChoice Q",
+          "imageFileName": "11.png",
+          "prompt": {
+            "prompt": "A, B, C or D",
+            "correctAnswers": [
+              "A",
+              "B",
+              "D"
+            ],
+            "allowCheckAnswer": true
+          }
+        },
+        {
+          "id": 12,
+          "title": "Resources",
+          "imageFileName": "12.png"
+        },
+        {
+          "id": 13,
+          "title": "Email Address",
+          "imageFileName": "13.png",
+          "prompt": {
+            "prompt": "Email Id"
+          }
+        },
+        {
+          "id": 14,
+          "title": "Mint POAP",
+          "imageFileName": "14.png",
+          "prompt": {
+            "prompt": "Wallet Address"
+          }
+        },
+        {
+          "id": 15,
+          "title": "Thank You",
+          "imageFileName": "15.png"
+        }
+      ]
+    }
+  }
