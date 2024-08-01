@@ -43,7 +43,7 @@ app.frame("", async (c) => {
 });
 
 app.frame("/:topicName", async (c) => {
-  const topicName = c.req.param("topicName");
+  const topicName = c.req.param("topicName").toLocaleLowerCase();
   const topic = (topics as any as Topics)[topicName];
   const buttonClicked = c.buttonValue as ButtonName;
   let ansFromPrevFrame = ((c.inputText as string) || "").trim();
