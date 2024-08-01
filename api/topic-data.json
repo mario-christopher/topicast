@@ -115,5 +115,80 @@
           "imageFileName": "15.png"
         }
       ]
+    },
+    "newinmm-0824" : {
+      "name": "newinmm-0824",
+      "createdDate": "08/01/2024",
+      "imageAspectRatio": "1:91:1",
+      "frames": [
+        {
+          "id": 1,
+          "title": "Intro Info",
+          "imageFileName": "1.png"
+        },
+        {
+          "id": 2,
+          "title": "Smart transactions",
+          "imageFileName": "2.png",
+          "prompt": {},
+          "externalUrl": "https://support.metamask.io/transactions-and-gas/transactions/smart-transactions/"
+        },
+        {
+          "id": 3,
+          "title": "Onboarding Settings",
+          "imageFileName": "3.png",
+          "prompt": {}
+        },
+        {
+          "id": 4,
+          "title": "Swap and Send",
+          "imageFileName": "4.png",
+          "prompt": {},
+          "externalUrl": "https://support.metamask.io/token-swaps/"
+        },
+        {
+          "id": 5,
+          "title": "Transaction Redesign",
+          "imageFileName": "5.png",
+          "prompt": {}
+        },
+        {
+          "id": 6,
+          "title": "Advanced Details",
+          "imageFileName": "6.png",
+          "prompt": {}
+        },
+        {
+          "id": 7,
+          "title": "Extensible Alerts",
+          "imageFileName": "7.png",
+          "prompt": {}
+        },
+        {
+          "id": 8,
+          "title": "Notifications",
+          "imageFileName": "8.png",
+          "prompt": {}
+        },
+        {
+          "id": 9,
+          "title": "Multichain",
+          "imageFileName": "9.png",
+          "prompt": {}
+        },
+        {
+          "id": 10,
+          "title": "User Email Address",
+          "imageFileName": "10.png",
+          "prompt": {
+            "prompt": "Email Address"
+          }
+        },
+        {
+          "id": 11,
+          "title": "Thank You",
+          "imageFileName": "11.png"
+        }
+      ]
     }
   }
